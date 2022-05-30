@@ -1,0 +1,54 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Helvetica";
+  margin: 0%;
+}
+#banner{
+  background-color:orchid;
+}
+h1{
+  color:orchid;
+}
+#name{
+  margin:5%;
+  align-items: center;
+}
+#pic{
+  width:10%;
+  height:10%;
+  margin-top:10%;
+  margin-bottom: -4.5%;
+}
+#logos{
+  width:3%;
+  height:3%;
+  margin:0.1%
+}
+#aboutMe, #hobbies
+{ display: inline-block;
+  width:25%;
+  padding:1%;
+  background-color: turquoise;
+  box-sizing: border-box;
+  border-radius: 6px;
+  box-shadow: 0 0 1px rgb(0 0 0 / 4%), 0 1px 6px rgb(0 0 0 / 4%), 0 5px 5px rgb(0 0 0 /4%); 
+  text-align: justify;
+  margin:5%;
+}
+form{
+  margin:2%;
+  padding:2%;
+  border-top:2px solid orchid;
+  border-bottom:2px solid orchid;
+}
+input{
+  margin-top:0.5%;
+  margin-bottom:0.8%;
+}
+#contacto-directo{
+  display:block;
+  margin-top:-6%;
+  margin-right:0.5%;
+  color:white;
+}
