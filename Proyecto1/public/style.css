@@ -23,6 +23,8 @@ h1{
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding:2%;
+  text-align: center;
 }
 #logos{
   width:3%;
@@ -45,10 +47,14 @@ form{
   padding:2%;
   border-top:2px solid orchid;
   border-bottom:2px solid orchid;
+  text-align: left;
 }
 input{
   margin-top:0.5%;
   margin-bottom:0.8%;
+}
+label{
+  color:black;
 }
 #forma-c{
   display:block;
