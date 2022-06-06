@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Proyecto 1</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="public/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -13,49 +13,82 @@
     <div align="center" id="banner">
       <img id="pic" src="images/pic.png">
     </div>
-    <div id="contacto-directo" align="right">
-      <p>+593 98-498-3311</p>
-      <p>gcsosa@espol.edu.ec</p>
-    </div>
     <div id="name" align="center">
       <h1>Gabriela Sosa Casal</h1>
-      <h4>Estudiante de Computación</h4>
     </div>
   </header>
-  <div id="blocks" align="center">
-    <section id="aboutMe">
-      <h3 style="font-weight:bold" align="center">Sobre mí</h3>
-      <ul style="list-style:none">
-        <li>Tengo 22 años.</li>
-        <li>Estudio en ESPOL.</li>
-        <li>Hablo español e inglés.</li>
-      </ul>
-    </section>
-    <section id="hobbies">
-      <h3 style="font-weight:bold" align="center">Mis hobbies</h3>
-      <ul>
-        <li>Cocinar</li>
-        <li>Ver series y películas</li>
-        <li>Leer</li>
-      </ul>
-    </section>
-  </div>
-  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1DDaukSWyn3iMfIAJnzmHG?utm_source=generator" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-  <section id="contacto-otro">
-    <form>
-      <h2>Contáctame</h2>
-      <label>Nombre</label></br>
-      <input type="text"></br>
-      <label>Correo electrónico</label></br>
-      <input type="text"></br>
-      <textarea rows="8" cols="40" maxlenght="300" placeholder="Deja aquí tu mensaje."></textarea></br>
-      <input type="checkbox" name="robot"><label> No soy un robot</label></br>
-      <input type="button" value="Enviar">
-    </form>
-  </section>
 
-  <script src="script.js"></script>
-</body>
+  <div id="container">
+    <ul class="nav">
+      <li><a href="grid1"><strong>Información</strong></a></li>
+      <li><a href="grid2"><strong>Multimedia</strong></a></li>
+    </ul>
+  </div>
+
+  <div class="grid" id="grid1">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1DDaukSWyn3iMfIAJnzmHG?utm_source=generator" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    <section id="p-info">
+      <h3>Fecha de nacimiento:</h3>
+      <p>20-01-2000</p>
+      <h3>Dirección:</h3>
+      <p>Centenario Sur</p>
+      <h3>Idiomas:</h3>
+      <p>Español, Inglés</p>
+      <h3>Intereses:</h3>
+      <p>Lectura, cocina</p>
+    </section>
+
+    <section id="f-academica">
+      <h3>Escuela Superior Politécnica del Litoral</h3>
+      <P>Ingeniería en Ciencias de la Computación</P>
+      <p>2018 - actualidad</p>
+      <p>Guayaquil, Ecuador</p>
+    </section>
+
+    <section id="maps">
+
+    </section>
+
+    <section id="destrezas">
+      <table>
+
+      </table>
+    </section>
+
+    <h2 align="center">Contáctame</h2>
+
+    <section id="forma-c">
+      <form>
+        <label>Nombre</label></br>
+        <input type="text"></br>
+        <label>Correo electrónico</label></br>
+        <input type="text"></br>
+        <textarea rows="8" cols="40" maxlenght="300" placeholder="Deja aquí tu mensaje."></textarea></br>
+        <input type="checkbox" name="robot"><label> No soy un robot</label></br>
+        <input type="button" value="Enviar">
+      </form>
+    </section>
+
+    <section id="otros-c">
+      <p>+593 984983311</p>
+      <p>(04) 2348236</p>
+      <p>gcsosa@espol.edu.ec</p>
+    </section>
+
+
+    <script src="script.js"></script>
+  </div>
+
+  <div class="grid" id="grid2">
+    <section id="videos">
+      <h2>Videos que recomiendo</h2>
+    </section>
+    <section id="podcasts">
+      <h2>Capítulos de podcasts que recomiendo</h2>
+    </section>
+    
+  </div>
+  </body>
 <footer>
   <div id="socials" align="center">
     <h3 style="color:#3CACAE">Encuéntrame en mis redes</h3>
