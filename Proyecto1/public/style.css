@@ -35,14 +35,14 @@ li{
   background-color:orchid;
 }
 #name{
-  margin-top:5%;
+  margin-top:7%;
   align-items: center;
 }
 #pic{
-  width:10%;
-  height:10%;
-  margin-top:10%;
-  margin-bottom: -4.5%;
+  width:15%;
+  height:15%;
+  margin-top:15%;
+  margin-bottom: -7.5%;
 }
 
 /*nav*/
@@ -79,27 +79,31 @@ li{
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-template-rows: repeat(4,1fr);
-  padding:2%;
+  grid-template-rows:min-content;
+  padding:5%;
   text-align: center;
   align-items: center;
+  gap:1% 1%;
 }
 #p-info{
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
+  border-right: 2px dashed #3CACAE;
 }
 #f-academica{
   grid-column-start: 4;
-  grid-column-end: 6;
+  grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 #map{
-  grid-column-start: 6;
+  grid-column-start: 7;
   grid-column-end: 13;
   grid-row-start: 1;
   grid-row-end: 2;
+  text-align: center;
 }
 #destrezas{
   grid-column-start: 1;
@@ -127,10 +131,21 @@ li{
   background-color: #EEB5EB;
 }
 #otros-c{
-  grid-column-start: 7;
+  grid-column-start: 10;
   grid-column-end: 13;
   grid-row-start: 4;
   grid-row-end: 5;
+  text-align: center;
+  padding-right:40%;
+}
+.icons{
+  margin:5%;
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  text-align: center;
+  padding-left: 40%;
 }
 .material-symbols-outlined {
   font-variation-settings:
@@ -139,8 +154,38 @@ li{
   'GRAD' 200,
   'opsz' 48;
   font-size: 36px;
+  text-align: left;
 }
 
+/*multimedia*/
+#vid-tit{
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#podc-tit{
+  grid-column-start: 7;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#videos{
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  border-right: 2px dashed #3CACAE;
+}
+#podcasts{
+  grid-column-start: 7;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+iframe{
+  width:75%;
+}
 /*footer*/
 #logos{
   width:3%;
