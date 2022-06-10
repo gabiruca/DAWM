@@ -37,7 +37,7 @@ textarea{
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 10%);
 }
 a:hover {
-  color:orchid;
+  color:#2a7879 ;
   text-decoration: underline;
 }
 td{
@@ -113,6 +113,7 @@ td{
   box-shadow: 0 0 1px rgb(0 0 0 / 8%), 0 1px 6px rgb(0 0 0 / 8%), 0 5px 5px rgb(0 0 0 /8%); 
   margin-left: 5%;
 }
+
 #map{
   grid-column-start: 7;
   grid-column-end: 13;
@@ -219,9 +220,11 @@ table{
   grid-column-end: 13;
   grid-row-start: 2;
   grid-row-end: 5;
+
 }
 iframe{
   width:75%;
+  align-self: center;
 }
 
 hr{

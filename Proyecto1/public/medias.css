@@ -1,0 +1,151 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #pic{
+        width: 6em;
+        margin-top: 1.5em;
+        margin-bottom: -3em;
+    }
+    #nombre{
+        font-size:1.25em;
+        margin-top: 12%;
+    }
+    h2{
+        font-size: 1.1em;
+    }
+    .nav{
+        font-size: 0.7em;
+    }
+    p{
+        font-size: 0.9em;
+    }
+    h3{
+        font-size: 1em;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7,1fr);
+        grid-template-rows:min-content;
+        gap: 0.2em;
+    }
+    #p-info{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin: 0.5em;
+        padding: 1em;
+    }
+    #f-academica{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: 0.5em;
+        padding: 1em;
+    }
+    #map{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin: 0.5em;
+    }
+    #destrezas{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        border-top: 0.1em dashed #3CACAE;
+    }
+    #contact-tag{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        border-top: 0.1em dashed #3CACAE;
+        margin: 1em;
+        margin-bottom: 0em;
+    }
+    #forma-c{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        border-right: none;
+        padding: 0.5em;
+    }
+    .icons{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 8;
+    }
+    .letras-c{
+        font-size: 0.8em;
+        padding: 0.8em;
+    }
+    .material-symbols-outlined {
+        font-size: 1.5em;
+    }
+    label{
+        font-size: 0.8em;
+    }
+    textarea{
+        width: 15em;
+        height: auto;
+        font-size: 0.8em;
+    }
+    input{
+        width: 15em;
+        align-content: center;
+    }
+    #robot{
+        margin: 0em;
+        width: auto;
+    }
+    form{
+        margin:0 auto;
+        padding: 1em;
+    }
+
+    /*medias multimedia*/
+    #vid-tit{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #videos{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        border:none;
+    }
+    #podc-tit{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        border-top: 0.1em dashed #3CACAE;
+        padding: 1em;
+    }
+    #podcasts{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 8;
+    }
+    table{
+        padding: 1em;
+        margin: 0 auto;
+    }
+    #logos{
+        width: 2em;
+        height: 2em;
+        margin-bottom:0.5em;
+    }
+    #cont{
+        margin-bottom: 0em;
+    }
+}
