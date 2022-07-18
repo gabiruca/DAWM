@@ -1,0 +1,144 @@
+
+#intro {
+    height: 700px;
+}
+  @media (max-width: 991px) {
+    #intro {
+        /* Margin to fix overlapping fixed navbar */
+        margin-top: 45px;
+    }
+}
+a{
+    color:lightpink;
+  }
+#select{
+    padding: 3% 15%;
+    text-align: center;
+}
+h4{
+    text-align:center;
+    color: #821D30;
+}
+table,th,td{
+    border: 3px solid #821D30;
+    background-color: #fbf0fb;
+    border-collapse: collapse;
+    box-shadow: 5px 3px 3px grey;
+    padding:3%;
+    width: 50%;
+    text-align: center;
+    margin: 2% auto;
+}
+
+th{
+    color:#821D30;
+}
+.infor{
+    box-shadow: 1px 1px 1px 1px grey;
+    padding: 0% 1%;
+    margin: auto 30%;
+    color: white;
+}
+li{
+    align-content: center;
+}
+caption{
+    text-align: center;
+}
+canvas{
+    max-width:80%;
+    height: auto;
+    margin: 5% 15%;
+}
+#imagen{
+   text-align: center;
+   margin-bottom: 2%;
+}
+
+/*CSS gradient animator: https://www.gradient-animator.com/*/
+.css-selector {
+    background: linear-gradient(272deg, #ee73ae, #8896e3);
+    background-size: 400% 400%;
+
+    -webkit-animation: fondo-info 20s ease infinite;
+    -moz-animation: fondo-info 20s ease infinite;
+    animation: fondo-info 20s ease infinite;
+}
+
+@-webkit-keyframes fondo-info {
+    0%{background-position:0% 37%}
+    50%{background-position:100% 64%}
+    100%{background-position:0% 37%}
+}
+@-moz-keyframes fondo-info {
+    0%{background-position:0% 37%}
+    50%{background-position:100% 64%}
+    100%{background-position:0% 37%}
+}
+@keyframes fondo-info {
+    0%{background-position:0% 37%}
+    50%{background-position:100% 64%}
+    100%{background-position:0% 37%}
+}
+
+/*
+==============================================
+slideLeft animation: http://www.justinaguilar.com/animations/css/animations.css
+==============================================
+*/
+
+
+.slideLeft{
+	animation-name: slideLeft;
+	-webkit-animation-name: slideLeft;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes slideLeft {
+	0% {
+		transform: translateX(150%);
+	}
+	50%{
+		transform: translateX(-8%);
+	}
+	65%{
+		transform: translateX(4%);
+	}
+	80%{
+		transform: translateX(-4%);
+	}
+	95%{
+		transform: translateX(2%);
+	}			
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes slideLeft {
+	0% {
+		-webkit-transform: translateX(150%);
+	}
+	50%{
+		-webkit-transform: translateX(-8%);
+	}
+	65%{
+		-webkit-transform: translateX(4%);
+	}
+	80%{
+		-webkit-transform: translateX(-4%);
+	}
+	95%{
+		-webkit-transform: translateX(2%);
+	}			
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
