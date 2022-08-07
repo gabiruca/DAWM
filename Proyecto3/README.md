@@ -1,11 +1,12 @@
-# Proyecto 3 - What's for dinner?
+# Proyecto3 - What's for dinner?
+#### Autora: Gabriela Sosa
+Tema: Recetas. 
+Descripción: Recetario. 
+Fuente: Poppins, sans-serif. 
+Dimensiones del dispositivo: 375x667
 
-Autora: Gabriela Sosa Casal
-Tema: Recetas (aplicación híbrida)
-Descripción: Recetario.
-Fuente: Poppins, sans-serif.
+Plantilla: https://startbootstrap.com/theme/creative
 
-#### Fuentes de consulta de recetas
+### Fuentes de consultas de recetas
     - https://www.recetasgratis.net/
     - 
-___

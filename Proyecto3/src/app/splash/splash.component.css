@@ -1,0 +1,25 @@
+.container {
+	background-image: url("fondo.jpg");
+	filter: blur(3px);
+	-webkit-filter: blur(3px);
+}
+
+.full {
+	min-height: 100vh;
+}
+
+.titulo {
+	font-size: 2.5em;
+	color:#0F110C;
+}
+
+.v-align {
+	padding: 34.5vh 0;
+	background-color: rgba(255,255,255, 0.6); 
+  	position: absolute;
+  	top: 50%;
+  	left: 53%;
+  	transform: translate(-50%, -50%);
+  	z-index: 2;
+  	width: 100%;
+}
