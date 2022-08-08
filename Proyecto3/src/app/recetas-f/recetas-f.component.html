@@ -1,78 +1,85 @@
-<nav class="navbar" id="mainNav">
-    <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" routerLink="/menu">
-            <!--check back icon-->
-        </button>
-        <!--Esto cambia de manera dinámica, soon!**********--> 
-        <p class="navbar-brand"><b>Mariscos</b></p>
-    </div>
-</nav>
+<mat-toolbar id="mainNav">  
+  <button mat-icon-button color="accent"  routerLink="/menu">  
+     <mat-icon>arrow_back</mat-icon>  
+  </button>  
+  <!--Esto cambia de manera dinámica, soon!**********--> 
+  <span class="card-title"><b>Mariscos</b></span>  
+</mat-toolbar>
+
+<!--Secciones-->
 <div>
-    <!--Prueba de html antes de javascript. INFORMACIÓN QUEMADA, OJO!!!!!-->
-    <section>
-        <div class="card">
-            <img src="assets/imagenes/food/encebollado.jpg" class="card-img-top" alt="img-encebollado">
-            <div class="card-body">
-              <p class="card-title">Encebollado</p>
-              <div class="card-text">
-                <span><!--Aquí va la estrella, no olvidar!!!-->4.5</span>
-                <span><!--Aquí va el icon del timer, no olvidar!!!-->52 minutos</span>
-              </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="assets/imagenes/food/tortillaC.jpg" class="card-img-top" alt="img-tortilla">
-            <div class="card-body">
-              <p class="card-title">Tortilla de cangrejo</p>
-              <div class="card-text">
-                <span><!--Aquí va la estrella, no olvidar!!!-->4.3</span>
-                <span><!--Aquí va el icon del timer, no olvidar!!!--> 20 minutos</span>
-              </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="card">
-            <img src="assets/imagenes/food/salmon.jpg" class="card-img-top" alt="img-salmon">
-            <div class="card-body">
-              <p class="card-title">Salmón al chipotle</p>
-              <div class="card-text">
-                <span><!--Aquí va la estrella, no olvidar!!!-->4.9</span>
-                <span><!--Aquí va el icon del timer, no olvidar!!!-->25 minutos</span>
-              </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="assets/imagenes/food/costillas.jpg" class="card-img-top" alt="img-costillas">
-            <div class="card-body">
-              <p class="card-title">Costillas</p>
-              <div class="card-text">
-                <span><!--Aquí va la estrella, no olvidar!!!-->4.5</span>
-                <span><!--Aquí va el icon del timer, no olvidar!!!-->3 horas</span>
-              </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="card">
-            <img src="assets/imagenes/food/parmesan.jpg" class="card-img-top" alt="img-pollo-parmesano">
-            <div class="card-body">
-              <p class="card-title">Pollo parmesano</p>
-              <div class="card-text">
-                <span><!--Aquí va la estrella, no olvidar!!!-->4.6</span>
-                <span><!--Aquí va el icon del timer, no olvidar!!!-->1 hora</span>
-              </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="assets/imagenes/food/esparragos.jpg" class="card-img-top" alt="img-esparragos">
-            <div class="card-body">
-              <p class="card-title">Esparragos rostizados</p>
-              <div class="card-text">
-                <span><!--Aquí va la estrella, no olvidar!!!-->4.6</span>
-                <span><!--Aquí va el icon del timer, no olvidar!!!-->35 minutos</span>
-              </div>
-            </div>
-        </div>
-    </section>
+  <p>Esto es un filtro de ejemplo!</p>
 </div>
+
+<section>
+  <mat-card class="example-card" routerLink="/receta">
+    <img mat-card-image src="assets/imagenes/food/encebollado.jpg" alt="encebollado">
+    <mat-card-title>Encebollado</mat-card-title>
+    <mat-card-content class="mtc-styles">
+      <mat-icon class="icons-st">star</mat-icon><span>4.5</span>
+      <mat-icon class="icons-st">timer</mat-icon><span>52 minutos</span>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-card" routerLink="/receta">
+    <img mat-card-image src="assets/imagenes/food/tortillaC.jpg" alt="Tortilla">
+    <mat-card-title>Tortilla de cangrejo</mat-card-title>
+    <mat-card-content class="mtc-styles">
+      <mat-icon class="icons-st">star</mat-icon><span>4.0</span>
+      <mat-icon class="icons-st">timer</mat-icon><span>1 hora</span>
+    </mat-card-content>
+  </mat-card>
+</section>
+<section>
+  <mat-card class="example-card" routerLink="/receta">
+    <img mat-card-image src="assets/imagenes/food/salmon.jpg" alt="salmon">
+    <mat-card-title>Salmón al chipotle</mat-card-title>
+    <mat-card-content class="mtc-styles">
+      <mat-icon class="icons-st">star</mat-icon><span>4.9</span>
+      <mat-icon class="icons-st">timer</mat-icon><span>25 minutos</span>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-card" routerLink="/receta">
+    <img mat-card-image src="assets/imagenes/food/camaronesA.jpg" alt="camaronesA">
+    <mat-card-title>Camarones al ajillo</mat-card-title>
+    <mat-card-content class="mtc-styles">
+      <mat-icon class="icons-st">star</mat-icon><span>4.6</span>
+      <mat-icon class="icons-st">timer</mat-icon><span>30 minutos</span>
+    </mat-card-content>
+  </mat-card>
+</section>
+<section>
+  <mat-card class="example-card" routerLink="/receta">
+    <img mat-card-image src="assets/imagenes/food/linguini.jpg" alt="linguini">
+    <mat-card-title>Linguini de camarón</mat-card-title>
+    <mat-card-content class="mtc-styles">
+      <mat-icon class="icons-st">star</mat-icon><span>4.6</span>
+      <mat-icon class="icons-st">timer</mat-icon><span>45 minutos</span>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-card" routerLink="/receta">
+    <img mat-card-image src="assets/imagenes/food/cioppino.jpg" alt="cioppino">
+    <mat-card-title>Cioppino</mat-card-title>
+    <mat-card-content class="mtc-styles">
+      <mat-icon class="icons-st">star</mat-icon><span>4.7</span>
+      <mat-icon class="icons-st">timer</mat-icon><span>1 hora</span>
+    </mat-card-content>
+  </mat-card>
+</section>
+<section>
+  <mat-card class="example-card" routerLink="/receta">
+    <img mat-card-image src="assets/imagenes/food/mejillones.jpg" alt="mejillones">
+    <mat-card-title>Mejillones a la francesa</mat-card-title>
+    <mat-card-content class="mtc-styles">
+      <mat-icon class="icons-st">star</mat-icon><span>4.8</span>
+      <mat-icon class="icons-st">timer</mat-icon><span>25 minutos</span>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-card" routerLink="/receta">
+    <img mat-card-image src="assets/imagenes/food/langostaR.jpg" alt="langostaR">
+    <mat-card-title>Rollos de langosta</mat-card-title>
+    <mat-card-content class="mtc-styles">
+      <mat-icon class="icons-st">star</mat-icon><span>5.0</span>
+      <mat-icon class="icons-st">timer</mat-icon><span>35 minutos</span>
+    </mat-card-content>
+  </mat-card>
+</section>

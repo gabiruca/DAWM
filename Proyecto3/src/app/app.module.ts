@@ -15,6 +15,7 @@ import { RecetasFComponent } from './recetas-f/recetas-f.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {MatButtonModule} from '@angular/material/button';
     SplashComponent,
     RecetaComponent,
     RecetasFComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatToolbarModule,
     MatGridListModule,
     MatIconModule,  
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,20 +1,36 @@
-@media screen and (max-device-width: 375px) {
-    .filter-op{
-        justify-content: center;
-        text-align: center;
-    }
-    #filter-t{
-        margin: 5%;
-        color: #8C8588;
-    }
-    .accordion-body{
-        text-align: center;
-    }
-    p{
-        font-size: 15px;
-    }
-    .accordion-button{
-        font-size: 18px;
-        color: #612940;
-    }
+.accordion-body{
+    text-align: center;
+}
+p{
+    font-size: 15px;
+}
+.accordion-button{
+    font-size: 18px;
+    color: #612940;
+}
+
+#mainNav{
+    background-color: white;
+    color: #8C8588;
+    text-align: center;
+}
+mat-icon{
+    color:#612940;
+}
+mat-toolbar{
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+span.card-title{
+    margin: 0;
+    font-size: 1em;
+    margin-left: 3em;
+}
+mat-card-title{
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: bold;
 }

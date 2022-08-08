@@ -1,1 +1,51 @@
-<p>receta works!</p>
+<mat-toolbar id="mainNav">  
+    <button mat-icon-button color="accent">  
+       <a href="javascript:window.history.back();"><mat-icon>arrow_back</mat-icon></a>  
+    </button>  
+    <!--Esto cambia de manera dinámica, soon!**********--> 
+    <span class="card-title"><b>Encebollado</b></span>  
+  </mat-toolbar>
+  
+  <!--Cuerpo-->
+<div>
+    <p>Esto es una receta de ejemplo!</p>
+</div>
+<section>
+    <mat-card class="example-card" routerLink="/receta">
+      <img mat-card-image src="assets/imagenes/food/encebollado.jpg" alt="encebollado">
+      <mat-card-content class="mtc-styles">
+        <div class="grid">
+            <b>Tiempo de preparación:</b> <p>52 minutos</p>
+            <b>País de origen:</b> <p>Ecuador</p>
+            <b>Categoría:</b> <p>Mariscos</p>
+            <b>Dificultad:</b> <p>Fácil</p>
+            <b>Calificación:</b> <p>4.5</p>
+        </div>
+        <h4>
+            El encebollado es un plato típico de Ecuador, se suele comer acompañado de chifles, pan, arroz o canguil, dependiendo de la región.
+        </h4>
+        <h1>Ingredientes</h1>
+        <div class="ing">
+            <ul>
+                <li>1 kg de alabacora o atún (pescado)</li>
+                <li>1kg de yuca</li>
+                <li>2cdas de aceite</li>
+                <li>2 tomates</li>
+                <li>1 cebolla morada</li>
+                <li>1 cdta de pimentón molido</li>
+                <li>2 dtas de comino molido</li>
+                <li>5 ramas de cilantro</li>
+                <li>8 tazas de agua</li>
+            </ul>
+        </div>
+        <h1>Preparación</h1>
+        <div>
+            <b>Paso 1:</b> <p>   Picar tomates y cebolla y refreírlos en una olla. Luego, agregar comino y sal al gusto.</p>
+            <b>Paso 2:</b> <p>   Ya hecho el refrito, añadir el agua y el cilantro en la misma olla.</p>
+            <b>Paso 3:</b> <p>    Cuando el agua esté hirviendo, agregar el pescado y cocinar a fuego medio durante 15 minutos. Pasado este tiempo, retirar el pescado del caldo.</p>
+            <b>Paso 4:</b> <p>   Pelar y cortar la yuca, cocinarla con sal al gusto hasta que esté blanda.</p>
+            <b>Paso 5:</b> <p>   Mezclar el caldo con la yuca y con el pescado, ajustar la sal de ser necesario. Servir el encebollado en el plato.</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </section>

@@ -1,4 +1,3 @@
-@media screen and (max-device-width: 375px) {
     section {
         display: flex;
         text-align: center;
@@ -6,46 +5,57 @@
     }
     #mainNav{
         background-color: #612940;
-        padding: 0 auto;
+        color: white;
+        text-align: center;
     }
-    .navbar-brand{
-        color:white !important;
+    mat-toolbar{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        padding:0;
     }
-    p{
-        margin: 0;
-    }
-    .navbar-toggler{
-        color:white;
-    }
-    
-    
-    img{
-        width: 160.5px;
-        height: 106.23px;
-        border-radius: 15px 15px 0 0;
-    } 
-    .card{
+    .example-card{
+        margin: 1em;
         width: 162px;
-        height: 170px;
-        margin: 0 auto;
+        height: 188px;
         border-radius: 15px;
         box-shadow: 5px 3px 3px grey;
     }
-    .card-title{
-        font-weight: bolder;
-        font-size: 1.3em;
-        text-align: left;
+    .icons-st{
+        color:#612940;
+        font-size: 1.1em;
     }
+    button{
+        margin-left: 3em;
+    }
+    mat-icon{
+        color:white;
+    }
+    .mtc-styles{
+        display: flex;
+        margin: 0.6em 0;
+    }
+    
+    img{
+        width: 162px;
+        height: 106.23px;
+        border-radius: 15px 15px 0 0;
+    } 
     span{
-        width: 30%;
         font-size: 0.8em;
+        margin-right: 0.5em;
     }
     h2{
-        margin: 5% 05%;
+        margin: 3% 3%;
         margin-bottom: 0%;
     }
-    .card-body{
-        padding: 0.5%;
-        justify-content:space-between;
+    mat-card-title{
+        margin: 0;
+        font-size: 1.3em;
+        font-weight: bold;
     }
-}
+    span.card-title{
+        margin: 0;
+        font-size: 1em;
+        margin-right: 3em;
+    }
+/*mat-card flex*/

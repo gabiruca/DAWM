@@ -1,80 +1,68 @@
-<nav class="navbar" id="mainNav">
-    <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" routerLink="/menu">
-            <!--check filter icon-->
-        </button>
-        <p class="navbar-brand"><b>What's for dinner?</b></p>
-    </div>
-</nav>
-<div>
+<mat-toolbar id="mainNav">  
+  <button mat-icon-button color="accent"  routerLink="/menu">  
+     <mat-icon>tune</mat-icon>  
+  </button>  
+  <span class="card-title"><b>What's for dinner?</b></span>  
+</mat-toolbar>
+
+<!--Secciones-->
+<h2>Más visitadas</h2>
+<section>
+  <mat-card class="example-card" routerLink="/receta">
+    <img mat-card-image src="assets/imagenes/food/encebollado.jpg" alt="encebollado">
+    <mat-card-title>Encebollado</mat-card-title>
+    <mat-card-content class="mtc-styles">
+      <mat-icon class="icons-st">star</mat-icon><span>4.5</span>
+      <mat-icon class="icons-st">timer</mat-icon><span>52 minutos</span>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-card" routerLink="/receta">
+    <img mat-card-image src="assets/imagenes/food/carbonara.jpg" alt="carbonara">
+    <mat-card-title>Pasta carbonara</mat-card-title>
+    <mat-card-content class="mtc-styles">
+      <mat-icon class="icons-st">star</mat-icon><span>4.3</span>
+      <mat-icon class="icons-st">timer</mat-icon><span>20 minutos</span>
+    </mat-card-content>
+  </mat-card>
+</section>
+<h2>Mejor calificadas</h2>
+<section>
+  <mat-card class="example-card" routerLink="/receta">
+    <img mat-card-image src="assets/imagenes/food/salmon.jpg" alt="salmon">
+    <mat-card-title>Salmón al chipotle</mat-card-title>
+    <mat-card-content class="mtc-styles">
+      <mat-icon class="icons-st">star</mat-icon><span>4.9</span>
+      <mat-icon class="icons-st">timer</mat-icon><span>25 minutos</span>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-card" routerLink="/receta">
+    <img mat-card-image src="assets/imagenes/food/costillas.jpg" alt="costillas">
+    <mat-card-title>Costillas</mat-card-title>
+    <mat-card-content class="mtc-styles">
+      <mat-icon class="icons-st">star</mat-icon><span>4.5</span>
+      <mat-icon class="icons-st">timer</mat-icon><span>3 horas</span>
+    </mat-card-content>
+  </mat-card>
+</section>
+<h2>Menor dificultad</h2>
+<section>
+  <mat-card class="example-card" routerLink="/receta">
+    <img mat-card-image src="assets/imagenes/food/parmesan.jpg" alt="parmesan">
+    <mat-card-title>Pollo parmesano</mat-card-title>
+    <mat-card-content class="mtc-styles">
+      <mat-icon class="icons-st">star</mat-icon><span>4.6</span>
+      <mat-icon class="icons-st">timer</mat-icon><span>1 hora</span>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-card" routerLink="/receta">
+    <img mat-card-image src="assets/imagenes/food/esparragos.jpg" alt="esparragos">
+    <mat-card-title>Esparragos rostizados</mat-card-title>
+    <mat-card-content class="mtc-styles">
+      <mat-icon class="icons-st">star</mat-icon><span>4.6</span>
+      <mat-icon class="icons-st">timer</mat-icon><span>35 minutos</span>
+    </mat-card-content>
+  </mat-card>
+</section>
+
+
     <!--Prueba de html antes de javascript. INFORMACIÓN QUEMADA, OJO!!!!!-->
-    <h2>Más visitadas</h2>
-    <section>
-        <div class="card">
-            <img src="assets/imagenes/food/encebollado.jpg" class="card-img-top" alt="img-encebollado">
-            <div class="card-body">
-              <p class="card-title">Encebollado</p>
-              <div class="card-text">
-                <span><!--Aquí va la estrella, no olvidar!!!-->4.5</span>
-                <span><!--Aquí va el icon del timer, no olvidar!!!-->52 minutos</span>
-              </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="assets/imagenes/food/carbonara.jpg" class="card-img-top" alt="img-carbonara">
-            <div class="card-body">
-              <p class="card-title">Pasta carbonara</p>
-              <div class="card-text">
-                <span><!--Aquí va la estrella, no olvidar!!!-->4.3</span>
-                <span><!--Aquí va el icon del timer, no olvidar!!!--> 20 minutos</span>
-              </div>
-            </div>
-        </div>
-    </section>
-    <h2>Mejor calificadas</h2>
-    <section>
-        <div class="card">
-            <img src="assets/imagenes/food/salmon.jpg" class="card-img-top" alt="img-salmon">
-            <div class="card-body">
-              <p class="card-title">Salmón al chipotle</p>
-              <div class="card-text">
-                <span><!--Aquí va la estrella, no olvidar!!!-->4.9</span>
-                <span><!--Aquí va el icon del timer, no olvidar!!!-->25 minutos</span>
-              </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="assets/imagenes/food/costillas.jpg" class="card-img-top" alt="img-costillas">
-            <div class="card-body">
-              <p class="card-title">Costillas</p>
-              <div class="card-text">
-                <span><!--Aquí va la estrella, no olvidar!!!-->4.5</span>
-                <span><!--Aquí va el icon del timer, no olvidar!!!-->3 horas</span>
-              </div>
-            </div>
-        </div>
-    </section>
-    <h2>Menor dificultad</h2>
-    <section>
-        <div class="card">
-            <img src="assets/imagenes/food/parmesan.jpg" class="card-img-top" alt="img-pollo-parmesano">
-            <div class="card-body">
-              <p class="card-title">Pollo parmesano</p>
-              <div class="card-text">
-                <span><!--Aquí va la estrella, no olvidar!!!-->4.6</span>
-                <span><!--Aquí va el icon del timer, no olvidar!!!-->1 hora</span>
-              </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="assets/imagenes/food/esparragos.jpg" class="card-img-top" alt="img-esparragos">
-            <div class="card-body">
-              <p class="card-title">Esparragos rostizados</p>
-              <div class="card-text">
-                <span><!--Aquí va la estrella, no olvidar!!!-->4.6</span>
-                <span><!--Aquí va el icon del timer, no olvidar!!!-->35 minutos</span>
-              </div>
-            </div>
-        </div>
-    </section>
-</div>
