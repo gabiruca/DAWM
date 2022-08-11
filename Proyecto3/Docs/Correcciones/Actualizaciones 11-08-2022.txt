@@ -1,0 +1,4 @@
+Cambios realizados a comentar
+	- Front y Back separados.
+	- Actualización base de datos relacional y sus archivos referenciados en el directorio "Docs".
+	- Base de datos no relacional implementada y generación de datos aleatorios(1000 dummies).

@@ -1,0 +1,10 @@
+Correcciones a realizar:
+	- Carga de imágenes al realizar un cambio de vista/componente.
+	- Tamaño del archivo html(desbordamiento).
+ 	- Uniformidad en las cards.
+	- Dinamismo(BDR-BDNR).
+	- Primer acceso desde dispositivo móvil, tiempo de splash al momento de la inspección.
+	- Error de despliegue heroku(router-outlet descartado).
+	- Aplicar modelo grid a los ingredientes y la información general, dentro del componente "receta".
+	- Identación al inicio del componente no idónea al momento de hacer la inspección móvil.
+	- Dar estructura al readme.
