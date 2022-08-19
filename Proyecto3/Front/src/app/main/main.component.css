@@ -10,7 +10,7 @@
     }
     mat-toolbar{
         display: grid;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1fr 1fr 1fr;
         padding:0;
     }
     .example-card{
@@ -23,9 +23,6 @@
     .icons-st{
         color:#612940;
         font-size: 1.1em;
-    }
-    button{
-        margin-left: 3em;
     }
     mat-icon{
         color:white;
@@ -56,6 +53,5 @@
     span.card-title{
         margin: 0;
         font-size: 1em;
-        margin-right: 3em;
     }
 /*mat-card flex*/
