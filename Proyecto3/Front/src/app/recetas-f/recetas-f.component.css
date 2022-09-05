@@ -28,14 +28,9 @@ mat-card-title{
     font-size: 1.3em;
     font-weight: bold;
 }
-section {
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-#mainNav{
-    background-color: white;
-    padding: 0 auto;
+.box{
+    display:flex;
+    flex-wrap: wrap;
 }
 .navbar-brand{
     color:#612940 !important;
@@ -61,10 +56,9 @@ h2{
     margin: 0.6em 0;
 }
 .example-card{
-    margin: 1em;
+    margin: 12px;
     width: 162px;
-    height: 188px;
+    height: 210px;
     border-radius: 15px;
     box-shadow: 5px 3px 3px grey;
 }
-/*REVISAR ESTILOS, ESPACIO ENTRE CARDS!!!*/

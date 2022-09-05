@@ -6,3 +6,22 @@ body {
 a {
   color: #00B7FF;
 }
+h1{
+  color:#612940;
+  text-align: center;
+}
+h2{
+  text-decoration: underline;
+  color: #9D6381;
+  font-weight: bold;
+}
+h4{
+  font-weight: bolder;
+}
+.example-card{
+  margin: 1em;
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 5px 3px 3px grey;
+  background-color: #FDECEF;
+}

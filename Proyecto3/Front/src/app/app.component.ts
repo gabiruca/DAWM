@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { FiltrosService } from './servicios/filtros.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Proyecto3';
+  constructor(private filtrosService: FiltrosService) {}
+  
 }

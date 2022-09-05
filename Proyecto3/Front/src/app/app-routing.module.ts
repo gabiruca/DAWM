@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: "menu", component: MenuComponent },
   { path: "receta", component: RecetaComponent },
   { path: "receta-f", component: RecetasFComponent },
-  { path: "**", redirectTo: "splash" }
+  { path: "**", redirectTo: "splash" },
 ];
 
 @NgModule({

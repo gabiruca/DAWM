@@ -1,0 +1,46 @@
+{
+    "model":{
+        "type":"Object",
+        "value":{
+            "idReceta":{
+                "type":"incrementNumber",
+                "options":{
+                    "from":1
+                }
+            },
+            "nombreReceta":{
+                "type":"faker",
+                "value":"lorem.words"
+            },
+            "tiempoPreparacion":{
+                "type":"randomElementInArray",
+                "value":["1 hora","52 minutos","35 minutos","25 minutos","45 minutos","30 minutos"]
+            },
+            "paisOrigen":{
+                "type":"randomElementInArray",
+                "value":["China","Ecuador","España","Italia","Japón","Malasia", "México"]
+            },
+            "categoria":{
+                "type":"randomElementInArray",
+                "value":["General","Vegetarianos","Mariscos","Postres","Bebidas","Snacks"]
+            },
+            "dificultad":{
+                "type":"randomElementInArray",
+                "value":["Fácil","Intermedio","Difícil"]
+            },
+            "calificacion":{
+                "type":"randomElementInArray",
+                "value":[5.0,4.8,4.5,4.6,4.1,4.0,4.3]
+            },
+            "descripcion":{
+                "type":"faker",
+                "value":"lorem.paragraph"
+            },
+            "fechaSubida":{
+                "type": "faker",
+                "value": "date.between",
+                "options": ["2022-01-01", "2022-08-10"]
+            }
+        }
+    }
+}

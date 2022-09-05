@@ -1,85 +1,22 @@
 <mat-toolbar id="mainNav">  
   <button mat-icon-button color="accent"  routerLink="/menu">  
-     <mat-icon>arrow_back</mat-icon>  
+    <mat-icon>arrow_back</mat-icon>  
   </button>  
-  <!--Esto cambia de manera dinámica, soon!**********--> 
-  <span class="card-title"><b>Mariscos</b></span>  
+  <span class="card-title"><b>{{seleccion}}</b></span>  
 </mat-toolbar>
 
 <!--Secciones-->
-<div>
-  <p>Esto es un filtro de ejemplo!</p>
+<div class="box">
+  <div *ngFor="let receta of recetas">
+    <div *ngIf="receta['categoria']==seleccion || receta['dificultad']==seleccion || receta['paisOrigen']==seleccion">
+      <mat-card class="example-card" routerLink="/receta" (click)="guardarReceta(receta['calificacion'],receta['categoria'],receta['descripcion'],receta['dificultad'],receta['fechaSubida'],receta['nombreReceta'],receta['paisOrigen'],receta['tiempoPreparacion'])">
+        <img mat-card-image src="assets/imagenes/food/{{imagenRd()}}">
+        <mat-card-title >{{receta['nombreReceta']}}</mat-card-title>
+        <mat-card-content class="mtc-styles">
+          <mat-icon class="icons-st">star</mat-icon><span>{{receta['calificacion']}}</span>
+          <mat-icon class="icons-st">timer</mat-icon><span>{{receta['tiempoPreparacion']}}</span>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
 </div>
-
-<section>
-  <mat-card class="example-card" routerLink="/receta">
-    <img mat-card-image src="assets/imagenes/food/encebollado.jpg" alt="encebollado">
-    <mat-card-title>Encebollado</mat-card-title>
-    <mat-card-content class="mtc-styles">
-      <mat-icon class="icons-st">star</mat-icon><span>4.5</span>
-      <mat-icon class="icons-st">timer</mat-icon><span>52 minutos</span>
-    </mat-card-content>
-  </mat-card>
-  <mat-card class="example-card" routerLink="/receta">
-    <img mat-card-image src="assets/imagenes/food/tortillaC.jpg" alt="Tortilla">
-    <mat-card-title>Tortilla de cangrejo</mat-card-title>
-    <mat-card-content class="mtc-styles">
-      <mat-icon class="icons-st">star</mat-icon><span>4.0</span>
-      <mat-icon class="icons-st">timer</mat-icon><span>1 hora</span>
-    </mat-card-content>
-  </mat-card>
-</section>
-<section>
-  <mat-card class="example-card" routerLink="/receta">
-    <img mat-card-image src="assets/imagenes/food/salmon.jpg" alt="salmon">
-    <mat-card-title>Salmón al chipotle</mat-card-title>
-    <mat-card-content class="mtc-styles">
-      <mat-icon class="icons-st">star</mat-icon><span>4.9</span>
-      <mat-icon class="icons-st">timer</mat-icon><span>25 minutos</span>
-    </mat-card-content>
-  </mat-card>
-  <mat-card class="example-card" routerLink="/receta">
-    <img mat-card-image src="assets/imagenes/food/camaronesA.jpg" alt="camaronesA">
-    <mat-card-title>Camarones al ajillo</mat-card-title>
-    <mat-card-content class="mtc-styles">
-      <mat-icon class="icons-st">star</mat-icon><span>4.6</span>
-      <mat-icon class="icons-st">timer</mat-icon><span>30 minutos</span>
-    </mat-card-content>
-  </mat-card>
-</section>
-<section>
-  <mat-card class="example-card" routerLink="/receta">
-    <img mat-card-image src="assets/imagenes/food/linguini.jpg" alt="linguini">
-    <mat-card-title>Linguini de camarón</mat-card-title>
-    <mat-card-content class="mtc-styles">
-      <mat-icon class="icons-st">star</mat-icon><span>4.6</span>
-      <mat-icon class="icons-st">timer</mat-icon><span>45 minutos</span>
-    </mat-card-content>
-  </mat-card>
-  <mat-card class="example-card" routerLink="/receta">
-    <img mat-card-image src="assets/imagenes/food/cioppino.jpg" alt="cioppino">
-    <mat-card-title>Cioppino</mat-card-title>
-    <mat-card-content class="mtc-styles">
-      <mat-icon class="icons-st">star</mat-icon><span>4.7</span>
-      <mat-icon class="icons-st">timer</mat-icon><span>1 hora</span>
-    </mat-card-content>
-  </mat-card>
-</section>
-<section>
-  <mat-card class="example-card" routerLink="/receta">
-    <img mat-card-image src="assets/imagenes/food/mejillones.jpg" alt="mejillones">
-    <mat-card-title>Mejillones a la francesa</mat-card-title>
-    <mat-card-content class="mtc-styles">
-      <mat-icon class="icons-st">star</mat-icon><span>4.8</span>
-      <mat-icon class="icons-st">timer</mat-icon><span>25 minutos</span>
-    </mat-card-content>
-  </mat-card>
-  <mat-card class="example-card" routerLink="/receta">
-    <img mat-card-image src="assets/imagenes/food/langostaR.jpg" alt="langostaR">
-    <mat-card-title>Rollos de langosta</mat-card-title>
-    <mat-card-content class="mtc-styles">
-      <mat-icon class="icons-st">star</mat-icon><span>5.0</span>
-      <mat-icon class="icons-st">timer</mat-icon><span>35 minutos</span>
-    </mat-card-content>
-  </mat-card>
-</section>

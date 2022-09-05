@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>Información REST API</h1>
+    <h2>Métodos disponibles</h2>
+    <section class="example-card">
+      <h4>/categorias</h4>
+      Visualiza las categorias almacenadas en la BDR.
+    </section>
+    <section class="example-card">
+      <h4>/dificultades</h4>
+      Visualiza los niveles de dificultad almacenados en la BDR.
+    </section>
+    <section class="example-card">
+      <h4>/paises</h4>
+      Visualiza los paises almacenados en la BDR.
+    </section>
+    <section class="example-card">
+      <h4>https://proyecto3-bc3c0-default-rtdb.firebaseio.com/Recetas.json</h4>
+      Muestra un json con la información de las recetas(BDNR).
+    </section>
   </body>
 </html>

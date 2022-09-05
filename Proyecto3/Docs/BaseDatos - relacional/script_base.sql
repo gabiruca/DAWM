@@ -29,3 +29,16 @@ create table paso(
     primary key(idPaso),
     foreign key(idReceta) references receta(idReceta)
 );
+
+create table categorias(
+	nombreCat varchar(200)
+);
+create table paises(
+	nombrePaises varchar(200)
+);
+create table dificultades(
+	nombreDif varchar(200)
+);
+
+delete from proyecto3_base.receta where idReceta=3;
+select * from proyecto3_base.paises;
