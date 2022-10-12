@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='/stylesheets/tabla.css' />
+    <title><%= title%></title>
+</head>
+<body>
+    <main class="col-12 ms-sm-auto px-md-4">
+        <div class="tabla-responsive">
+            <div class="twrapper">
+                <div class="table-title">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Economía</h2>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Link</th>
+                            <th>Autor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% _newsType.forEach(function(noticia){ %>
+                            <tr>
+                                <td><%= noticia.title %></td>
+                                <td><%= noticia.link %></td>
+                                <td><%= noticia.id_creator %></td>
+                            </tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+        </div>  
+    </main>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body{
+    background-color: #F7C9B6;
+    font-family: Lucida Bright,Georgia,serif; 
+}
+
+#titulo{
+    text-align: center;
+    color: #821D30;
+    font-size: 35px;
+}
+
+b{
+    color: #821D30;
+    text-decoration: underline;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: min-content;
+    padding:3%;
+    align-items: center;
+    gap: 2% 0%;
+}
+
+h3{
+    color: #821D30;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+a{
+    color: cornflowerblue;
+}
+
+#tabla,th,td{
+    border: 3px solid #821D30;
+    background-color: #fbf0fb;
+    border-collapse: collapse;
+    box-shadow: 5px 3px 3px grey;
+    padding:5%;
+    width: 30%;
+    text-align: center;
+}
+
+th{
+    color:#821D30;
+}
